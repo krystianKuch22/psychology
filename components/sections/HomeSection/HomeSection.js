@@ -42,6 +42,7 @@ export default function HomeSection() {
             </div>
             <div className="deco deco-down">
               <Image src="/png/vector2.png" layout="fill" objectFit="contain" />
+              <div></div>
             </div>
           </div>
         </CenterFlexRow>
