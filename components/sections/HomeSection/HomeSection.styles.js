@@ -1,19 +1,14 @@
 import styled from "styled-components";
 
 export const StyledHomeSection = styled.section`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   height: 60vh;
   background-color: #fff;
-  padding: 0 6em;
 
   .homeSectionSearch {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 1em;
-
     width: 50%;
     h1 {
       font-size: 3rem;
@@ -22,15 +17,47 @@ export const StyledHomeSection = styled.section`
   }
 
   .personDiv {
+    position: relative;
     display: flex;
     align-items: center;
-    width: 50%;
-    height: 100%;
+    width: 50vw;
+    height: 35em;
 
     .person {
       position: relative;
       width: 100%;
-      height: 50%;
+      height: 20vw;
     }
+  }
+
+  .inputsBox {
+    display: flex;
+    gap: 0.5em;
+  }
+
+  .searchBtn {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+  }
+
+  button:has(div) {
+    padding-left: 0;
+  }
+
+  .deco {
+    position: absolute;
+    width: 8vh;
+    height: 4vh;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .deco-up {
+    top: 6em;
+  }
+
+  .deco-down {
+    bottom: 8em;
   }
 `;
