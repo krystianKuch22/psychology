@@ -12,6 +12,10 @@ const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem;
+
+    h2{
+      font-size: 1.5rem;
+    }
   }
 
   body {

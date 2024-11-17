@@ -26,7 +26,7 @@ export const StyledHomeSection = styled.section`
     .person {
       position: relative;
       width: 100%;
-      height: 20vw;
+      height: 15vw;
     }
   }
 

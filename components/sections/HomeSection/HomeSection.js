@@ -6,43 +6,42 @@ import Wrapper from "@/components/layout/Wrapper/Wrapper";
 import CenterFlexRow from "@/components/layout/CenterFlexRow/CenterFlexRow";
 import SearchIcon from "@/components/common/Icons/SearchIcon";
 
-export default function HomeSection() {
+export default function HomeSection({language}) {
   return (
     <StyledHomeSection>
       <Wrapper>
         <CenterFlexRow>
           <div className="homeSectionSearch">
-            <h1>Znajdź specjalistę i zadbaj o siebie</h1>
+            <h1>{language.homeSectionTitle}</h1>
             <p>
-              Szukaj wśród wielu ekspertów z poszczególnych dziedzin i
-              specjalizacji.
+              {language.homeSectionParagraph}
             </p>
             <CenterFlexRow>
               <div className="inputsBox">
-                <InputBasic placeholder="Szukaj specjalisty" />{" "}
-                <InputBasic placeholder="Miasto lub dzielnica" />
-                <ButtonLink textColor="white">szukaj</ButtonLink>
+                <InputBasic placeholder={language.homeSectionInputPlaceholder1} />{" "}
+                <InputBasic placeholder={language.homeSectionInputPlaceholder2} />
+                <ButtonLink textColor="white">{language.homeSectionButton}</ButtonLink>
               </div>
             </CenterFlexRow>
             <ButtonLink second textColor="green">
               <div className="searchBtn">
-                <SearchIcon /> wyszukiwanie zaawansowane
+                <SearchIcon /> {language.homeSectionAdvanceButton}
               </div>
             </ButtonLink>
           </div>
           <div className="personDiv">
             <div className="person">
-              <Image src="/svg/person1.svg" layout="fill" objectFit="contain" />
+              <Image src="/svg/person1.svg" alt="Talking yellow person." fill style={{objectFit: "contain"}} sizes="50%"/>
             </div>
             <div className="person">
-              <Image src="/svg/person2.svg" layout="fill" objectFit="contain" />
+              <Image src="/svg/person2.svg" alt="Talking blue person." fill style={{objectFit: "contain"}} sizes="50%"/>
             </div>
             <div className="deco deco-up">
-              <Image src="/png/vector1.png" layout="fill" objectFit="contain" />
+              <Image src="/png/vector1.png" alt="Deco twist." fill style={{objectFit: "contain"}} sizes="100%"/>
             </div>
             <div className="deco deco-down">
-              <Image src="/png/vector2.png" layout="fill" objectFit="contain" />
-              <div></div>
+              <Image src="/png/vector2.png" alt="Deco twist." fill style={{objectFit: "contain"}} sizes="100%"/>
+              
             </div>
           </div>
         </CenterFlexRow>

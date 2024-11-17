@@ -12,7 +12,7 @@ const buttonVariants = {
 };
 
 const baseButtonStyle = css`
-  padding: 10px 20px;
+  padding: 1em 2em;
   background-color: ${({$second}) => ($second ? '#fff' : 'var(--primary-green-color)')};
   color: ${({$textColor}) => buttonVariants[$textColor]?.color || 'black'};
   text-decoration: none;

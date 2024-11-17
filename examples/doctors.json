@@ -1,0 +1,72 @@
+[
+  {
+    "firstName": "Anna",
+    "lastName": "Maksymilinowicz - Kowalska",
+    "opinions": [
+      {
+        "user": "Alina",
+        "description": "Dobry terapeuta",
+        "opinionRating": 5
+      },
+      {
+        "user": "Alina",
+        "description": "Dobry terapeuta",
+        "opinionRating": 4
+      }
+    ],
+    "isDistinguished": true,
+    "specialization": "doktor psychologii, terapeuta",
+    "description": "Zapraszam na bezpłatną konsultację wstępną którą prowadzę przez telefon lub online (przez WhatsApp) na którą składa się: - pomogę określić wstępnie problemy, trudności z którymi Pan(i) się mierzy - postaram się doradzić jaki rodzaj psychoterapii by Panu(i) pasował - spotkania indywidualne, par lub grupowe, poradnictwo rodzicielskie - spróbuję nakreślić jaki nurt psychoterapii pasowałby danej osobie - zaproponuję specjalistę: psychoterapeutę, psychologa, psychoterapeutę par, seksuologa, psychiatrę, coacha lub neurologa - zaproponuję kilka miejsc w Warszawie lub online gdzie można komfortowo skorzystać z psychoterapii - postaram się ogólnie pomóc i pokierować tak, aby pierwsze kroki w szukaniu dla siebie specjalisty były łatwiejsze",
+    "tags": [
+      "Depresja",
+      "Stany lękowe",
+      "ADHD",
+      "Uzależnienia",
+      "Mania",
+      "Fobie"
+    ]
+  },
+  {
+    "firstName": "Józef",
+    "lastName": "Karaś",
+    "opinions": [
+      {
+        "user": "Alina",
+        "description": "Zły terapeuta",
+        "opinionRating": 2
+      }
+    ],
+    "isDistinguished": true,
+    "specialization": "doktor psychologii, terapeuta",
+    "description": "Zapraszam na bezpłatną konsultację wstępną którą prowadzę przez telefon lub online (przez WhatsApp) na którą składa się: - pomogę określić wstępnie problemy, trudności z którymi Pan(i) się mierzy - postaram się doradzić jaki rodzaj psychoterapii by Panu(i) pasował - spotkania indywidualne, par lub grupowe, poradnictwo rodzicielskie - spróbuję nakreślić jaki nurt psychoterapii pasowałby danej osobie - zaproponuję specjalistę: psychoterapeutę, psychologa, psychoterapeutę par, seksuologa, psychiatrę, coacha lub neurologa - zaproponuję kilka miejsc w Warszawie lub online gdzie można komfortowo skorzystać z psychoterapii - postaram się ogólnie pomóc i pokierować tak, aby pierwsze kroki w szukaniu dla siebie specjalisty były łatwiejsze",
+    "tags": [
+      "Depresja",
+      "Stany lękowe",
+      "ADHD",
+      "Uzależnienia",
+      "Mania",
+      "Fobie"
+    ]
+  },{
+    "firstName": "Joanna",
+    "lastName": "Krupińska",
+    "opinions": [
+      {
+        "user": "Alina",
+        "description": "Dobry terapeuta",
+        "opinionRating": 3
+      }
+    ],
+    "isDistinguished": true,
+    "specialization": "doktor psychologii, terapeuta",
+    "description": "Zapraszam na bezpłatną konsultację wstępną którą prowadzę przez telefon lub online (przez WhatsApp) na którą składa się: - pomogę określić wstępnie problemy, trudności z którymi Pan(i) się mierzy - postaram się doradzić jaki rodzaj psychoterapii by Panu(i) pasował - spotkania indywidualne, par lub grupowe, poradnictwo rodzicielskie - spróbuję nakreślić jaki nurt psychoterapii pasowałby danej osobie - zaproponuję specjalistę: psychoterapeutę, psychologa, psychoterapeutę par, seksuologa, psychiatrę, coacha lub neurologa - zaproponuję kilka miejsc w Warszawie lub online gdzie można komfortowo skorzystać z psychoterapii - postaram się ogólnie pomóc i pokierować tak, aby pierwsze kroki w szukaniu dla siebie specjalisty były łatwiejsze",
+    "tags": [
+      "Depresja",
+      "Stany lękowe",
+      "ADHD",
+      "Uzależnienia",
+      "Mania",
+      "Fobie"
+    ]
+  }
+]
