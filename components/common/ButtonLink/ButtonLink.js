@@ -4,17 +4,17 @@ export default function ButtonLink({
   children,
   href,
   asButton = true,
-  second,
+  bgc,
   textColor,
 }) {
   if (asButton)
     return (
-      <StyledButton $second={second} $textColor={textColor}>
+      <StyledButton $bgc={bgc} $textColor={textColor}>
         {children}
       </StyledButton>
     );
   return (
-    <StyledLink href={href} $second={second} $textColor={textColor} passHref>
+    <StyledLink href={href} $bgc={bgc} $textColor={textColor} passHref>
       {children}
     </StyledLink>
   );

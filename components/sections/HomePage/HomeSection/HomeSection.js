@@ -4,7 +4,7 @@ import ButtonLink from "@/components/common/ButtonLink/ButtonLink";
 import Image from "next/image";
 import Wrapper from "@/components/layout/Wrapper/Wrapper";
 import CenterFlexRow from "@/components/layout/CenterFlexRow/CenterFlexRow";
-import SearchIcon from "@/components/common/Icons/SearchIcon";
+import SearchIcon from "@/components/common/Icons/SearchIcon/SearchIcon";
 
 export default function HomeSection({language}) {
   return (
@@ -20,10 +20,10 @@ export default function HomeSection({language}) {
               <div className="inputsBox">
                 <InputBasic placeholder={language.homeSectionInputPlaceholder1} />{" "}
                 <InputBasic placeholder={language.homeSectionInputPlaceholder2} />
-                <ButtonLink textColor="white">{language.homeSectionButton}</ButtonLink>
+                <ButtonLink textColor="white" bgc="green">{language.homeSectionButton}</ButtonLink>
               </div>
             </CenterFlexRow>
-            <ButtonLink second textColor="green">
+            <ButtonLink bgc="white" textColor="green">
               <div className="searchBtn">
                 <SearchIcon /> {language.homeSectionAdvanceButton}
               </div>

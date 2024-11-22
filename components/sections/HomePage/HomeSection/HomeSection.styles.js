@@ -42,7 +42,7 @@ export const StyledHomeSection = styled.section`
   }
 
   button:has(div) {
-    padding-left: 0;
+    padding: .1em;
   }
 
   .deco {

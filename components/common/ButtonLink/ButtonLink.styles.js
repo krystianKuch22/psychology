@@ -2,19 +2,23 @@ import Link from "next/link";
 import styled, { css } from "styled-components";
 
 const buttonVariants = {
-    white: {
-        color: '#fff',
-    },
-    green: {
-        color: 'var(--primary-green-color)',
-    }
-
+  white: {
+    color: "#fff",
+  },
+  green: {
+    color: "var(--primary-green-color)",
+  },
 };
 
 const baseButtonStyle = css`
   padding: 1em 2em;
-  background-color: ${({$second}) => ($second ? '#fff' : 'var(--primary-green-color)')};
-  color: ${({$textColor}) => buttonVariants[$textColor]?.color || 'black'};
+  background-color: ${({ $bgc }) =>
+    $bgc === "white"
+      ? "#fff"
+      : $bgc === "green"
+      ? "var(--primary-green-color)"
+      : "transparent"};
+  color: ${({ $textColor }) => buttonVariants[$textColor]?.color || "black"};
   text-decoration: none;
   text-transform: uppercase;
   border: none;
@@ -25,7 +29,7 @@ const baseButtonStyle = css`
     background-color: #005bb5;
   }
 
-  b{
+  b {
     text-transform: none;
   }
 `;

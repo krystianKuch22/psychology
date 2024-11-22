@@ -13,27 +13,28 @@ export default function Header({ language }) {
           </h2>
 
           <div>
-            <ButtonLink href="/search" asButton={false} second>
+            <ButtonLink href="/search" asButton={false} bgc>
               {language.menuButton1}
             </ButtonLink>
-            <ButtonLink href="/price-list" asButton={false} second>
+            <ButtonLink href="/price-list" asButton={false} bgc>
               {language.menuButton2}
             </ButtonLink>
-            <ButtonLink href="/aboutUs" asButton={false} second>
+            <ButtonLink href="/aboutUs" asButton={false} bgc>
               {language.menuButton3}
             </ButtonLink>
-            <ButtonLink href="/offer" asButton={false} second>
+            <ButtonLink href="/offer" asButton={false} bgc>
               {language.menuButton4}
             </ButtonLink>
           </div>
 
           <div>
-            <ButtonLink href="/login" asButton={false} second textColor="green">
+            <ButtonLink href="/login" asButton={false} bgc textColor="green">
               {language.loginButton}
             </ButtonLink>
             <ButtonLink
               href="/forSpecialists"
               asButton={false}
+              bgc="green"
               textColor="white"
             >
               {language.forSpecialistsButton}
