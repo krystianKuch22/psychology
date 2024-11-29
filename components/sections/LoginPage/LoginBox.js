@@ -10,6 +10,7 @@ import Link from "next/link";
 import { useState } from "react";
 import InputForm from "@/components/common/InputForm/InputForm";
 import XIcon from "@/components/common/Icons/XIcon/XIcon";
+import axios from "axios";
 
 export default function LoginBox({ language }) {
   const [loginFormData, setLoginFormData] = useState({
@@ -25,13 +26,26 @@ export default function LoginBox({ language }) {
     });
   };
 
+  async function handleSubmit(e) {
+    e.preventDefault();
+    try {
+      const response = await axios.post(
+        `http://api.limbaapp.usermd.net/authentication/test@test.com/${loginFormData.password}`
+      );
+      console.log(response);
+    } catch (error) {
+      console.error("Error fetching data:", error);
+    }
+  }
+
   return (
     <StyledLoginBox>
       <div className="loginBox">
         <form
           className="formBox"
-          action="/api/login-form"
-          method="POST"
+          onSubmit={handleSubmit}
+          // action={`http://api.limbaapp.usermd.net/authentication/test@test.com/${loginFormData.password}`}
+          // method="POST"
           name="loginForm"
         >
           <h1>{language.loginBoxHeader}</h1>
@@ -68,12 +82,7 @@ export default function LoginBox({ language }) {
             </ButtonLink>
           </div>
 
-          <ButtonLink
-            href="/"
-            backgroundColor="green"
-            textColor="white"
-            asButton={false}
-          >
+          <ButtonLink backgroundColor="green" textColor="white" type="submit">
             {language.loginBoxLoginBtn}
           </ButtonLink>
         </form>
@@ -92,7 +101,7 @@ export default function LoginBox({ language }) {
             <AppleIcon />
           </Link>
           <Link href="/">
-          <XIcon/>
+            <XIcon />
           </Link>
         </div>
       </div>

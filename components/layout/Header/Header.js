@@ -67,7 +67,7 @@ export default function Header({ language }) {
               {language.loginButton}
             </ButtonLink>
             <ButtonLink
-              href="/user/doctor/profile"
+              href="/user/doctor/register"
               asButton={false}
               backgroundColor="green"
               textColor="white"
