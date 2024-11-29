@@ -12,10 +12,10 @@ const buttonVariants = {
 
 const baseButtonStyle = css`
   padding: 1em 2em;
-  background-color: ${({ $bgc }) =>
-    $bgc === "white"
+  background-color: ${({ $backgroundColor }) =>
+    $backgroundColor === "white"
       ? "#fff"
-      : $bgc === "green"
+      : $backgroundColor === "green"
       ? "var(--primary-green-color)"
       : "transparent"};
   color: ${({ $textColor }) => buttonVariants[$textColor]?.color || "black"};

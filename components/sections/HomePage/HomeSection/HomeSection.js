@@ -20,10 +20,10 @@ export default function HomeSection({language}) {
               <div className="inputsBox">
                 <InputBasic placeholder={language.homeSectionInputPlaceholder1} />{" "}
                 <InputBasic placeholder={language.homeSectionInputPlaceholder2} />
-                <ButtonLink textColor="white" bgc="green">{language.homeSectionButton}</ButtonLink>
+                <ButtonLink textColor="white" backgroundColor="green">{language.homeSectionButton}</ButtonLink>
               </div>
             </CenterFlexRow>
-            <ButtonLink bgc="white" textColor="green">
+            <ButtonLink backgroundColor="white" textColor="green">
               <div className="searchBtn">
                 <SearchIcon /> {language.homeSectionAdvanceButton}
               </div>

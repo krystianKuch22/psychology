@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StyledFeaturedDoctorBox = styled.div`
   width: 30vw;
-  background-color: #fff;
+  background-color: var(--primary-background-color);
   border-radius: 8px;
   padding-bottom: 0.5em;
 
@@ -18,21 +18,21 @@ export const StyledFeaturedDoctorBox = styled.div`
       overflow: hidden;
       text-overflow: ellipsis;
       -webkit-line-clamp: 2;
-      color: #454545;
+      color: var(--doctor-description-text-color);
     }
 
     .decoLine {
       width: 100%;
       height: 2px;
       margin-bottom: 0.5em;
-      background-color: #dddddd;
+      background-color: var(--decoline-color);
     }
 
     a {
       padding: 0.5em 0.25em;
       text-decoration: none;
-      color: #454545;
-      background-color: #f2f3ff;
+      color: var(--tag-text-color);
+      background-color: var( --background-tag-doctor-card-color);
       border-radius: 8px;
     }
 
@@ -44,8 +44,8 @@ export const StyledFeaturedDoctorBox = styled.div`
         background: none;
         border: none;
         padding: 0.5em 0.25em;
-        color: #454545;
-        background-color: #f2f3ff;
+        color: var(--tag-text-color);
+        background-color: var( --background-tag-doctor-card-color);
         border-radius: 8px;
       }
     }

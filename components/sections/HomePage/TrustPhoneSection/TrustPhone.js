@@ -17,13 +17,13 @@ export default function TrustPhone({ language }) {
       </div>
       <h2>{language.trustPhone}</h2>
       <p>{language.descriptionOfTrustPhone}</p>
-      <ButtonLink bgc="white" textColor="green">
+      <ButtonLink backgroundColor="white" textColor="green">
         <span className="numberBtnText">
           <PhoneIcon />
           {language.numberOfTrustPhone}
         </span>
       </ButtonLink>
-      <ButtonLink textColor="white" bgc="green">{language.trustPhoneButton}</ButtonLink>
+      <ButtonLink textColor="white" backgroundColor="green">{language.trustPhoneButton}</ButtonLink>
     </StyledTrustPhone>
   );
 }

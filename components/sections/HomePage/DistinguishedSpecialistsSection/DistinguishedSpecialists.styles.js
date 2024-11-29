@@ -5,7 +5,7 @@ export const StyledDistinguishedSpacialists = styled.section`
   flex-direction: column;
   justify-content: center;
   height: 40vh;
-  background-color: #d9dcfe;
+  background-color: var(--background-section-2-color);
 
   h2 {
     margin-bottom: 0.5em;

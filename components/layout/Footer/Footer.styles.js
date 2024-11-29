@@ -1,9 +1,10 @@
 import styled from "styled-components";
 
 export const StyledFooter = styled.footer`
-  background-color: black;
+  background-color: var(--background-footer-color);
   color: #fff;
-  height: 30vh;
+  height: 35vh;
+  width: 100%;
 
   .footerBox {
     display: flex;
@@ -34,7 +35,7 @@ export const StyledFooter = styled.footer`
 
     h3 {
       margin-bottom: 0.5em;
-      color: #bbffe6;
+      color: var(--titles-footer-color);
     }
     div:first-of-type h3:first-child {
       color: var(--primary-green-color);

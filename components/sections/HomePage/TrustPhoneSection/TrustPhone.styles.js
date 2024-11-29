@@ -7,7 +7,7 @@ export const StyledTrustPhone = styled.section`
   align-items: center;
   gap: 0.5em;
   height: 80vh;
-  background-color: #fff;
+  background-color: var(--primary-background-color);
 
   .imgBox {
     position: relative;
@@ -24,7 +24,7 @@ export const StyledTrustPhone = styled.section`
     width: 40vh;
     text-align: center;
     font-size: 0.8rem;
-    color: #3b3663;
+    color: var(--secondary-text-color);
   }
 
   .numberBtnText {

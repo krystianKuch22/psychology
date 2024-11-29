@@ -4,7 +4,7 @@ export const StyledSearchTagsSection = styled.section`
   display: flex;
   align-items: center;
   height: 18vh;
-  background-color: #f2f3ff;
+  background-color: var( --background-section-1-color);
 
   .tagsFlex {
     display: flex;
@@ -19,12 +19,12 @@ export const StyledSearchTagsSection = styled.section`
     a {
       border-radius: 8px;
       text-decoration: none;
-      color: #454545;
+      color: var(--tag-text-color);
     }
   }
 
   a {
     padding: 0.5em 1em;
-    background-color: #fff;
+    background-color: var(--tag-background-color);
   }
 `;

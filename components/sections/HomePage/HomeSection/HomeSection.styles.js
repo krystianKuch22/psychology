@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StyledHomeSection = styled.section`
   height: 60vh;
-  background-color: #fff;
+  background-color: var(--primary-background-color);
 
   .homeSectionSearch {
     display: flex;

@@ -8,6 +8,8 @@ import GoogleIcon from "@/components/common/Icons/GoogleIcon/GoogleIcon";
 import Wrapper from "@/components/layout/Wrapper/Wrapper";
 import Link from "next/link";
 import { useState } from "react";
+import InputForm from "@/components/common/InputForm/InputForm";
+import XIcon from "@/components/common/Icons/XIcon/XIcon";
 
 export default function LoginBox({ language }) {
   const [loginFormData, setLoginFormData] = useState({
@@ -21,9 +23,8 @@ export default function LoginBox({ language }) {
       ...loginFormData,
       [name]: value,
     });
-
-    
   };
+
   return (
     <StyledLoginBox>
       <div className="loginBox">
@@ -38,55 +39,60 @@ export default function LoginBox({ language }) {
             {language.loginBoxAccountQuestion}
             <Link href="/register">{language.loginBoxBtnSignup}</Link>
           </span>
-          <label className="inputBox">
-            <InputBasic
-              type="email"
-              isRequired={true}
-              name="email"
-              ariaLabel={language.loginBoxEmailInput}
-              ariaDescribe="loginUsername"
-              autocomplete="on"
-              onChange={handleInput}
-            />
-            {/* Dodać kontrolowanie stanu inputów!!! */}
-            <span>{language.loginBoxEmailInput}</span>
-          </label>
-          <label className="inputBox">
-            <InputBasic
-              type="password"
-              isRequired={true}
-              name="password"
-              ariaLabel={language.loginBoxPasswordInput}
-              ariaDescribe="password"
-              autocomplete="on"
-              minlength="8"
-              onChange={handleInput}
-            />
-            <span>{language.loginBoxPasswordInput}</span>
-          </label>
+          <InputForm
+            typeOf="input"
+            spanText={language.loginBoxEmailInput}
+            type="email"
+            isRequired={true}
+            name="email"
+            ariaLabel={language.loginBoxEmailAriaLabel}
+            ariaDescribe={language.loginBoxEmailAriaDescribe}
+            autocomplete="on"
+            onChange={handleInput}
+          />
+          <InputForm
+            typeOf="input"
+            spanText={language.loginBoxPasswordInput}
+            type="password"
+            isRequired={true}
+            name="password"
+            ariaLabel={language.loginBoxPasswordAriaLabel}
+            ariaDescribe={language.loginBoxPasswordAriaDescribe}
+            autocomplete="on"
+            minlength="8"
+            onChange={handleInput}
+          />
           <div className="passwordReminderBox">
             <ButtonLink href="/register" textColor="green" asButton={false}>
               {language.loginBoxPasswordReminderBtn}
             </ButtonLink>
           </div>
 
-          <ButtonLink href="/" bgc="green" textColor="white" asButton={false}>
+          <ButtonLink
+            href="/"
+            backgroundColor="green"
+            textColor="white"
+            asButton={false}
+          >
             {language.loginBoxLoginBtn}
           </ButtonLink>
         </form>
         <span className="anotherLogins">{language.loginBoxAnotherLogins}</span>
         <div className="socialBox">
           <Link href="/">
-            <FbIcon />
+            <GoogleIcon />
           </Link>
           <Link href="/">
-            <AppleIcon />
+            <FbIcon />
           </Link>
           <Link href="/">
             <LinkedInIcon />
           </Link>
           <Link href="/">
-            <GoogleIcon />
+            <AppleIcon />
+          </Link>
+          <Link href="/">
+          <XIcon/>
           </Link>
         </div>
       </div>

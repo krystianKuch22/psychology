@@ -14,7 +14,7 @@ export const StyledLoginBox = styled.section`
     text-align: center;
     width: 30em;
 
-    .formBox{
+    .formBox {
       display: flex;
       flex-direction: column;
       gap: 1em;
@@ -24,10 +24,6 @@ export const StyledLoginBox = styled.section`
       font-size: 2rem;
     }
 
-    span {
-      font-size: 0.8rem;
-    }
-
     .accountQuestion {
       a {
         margin-left: 0.3em;
@@ -35,26 +31,6 @@ export const StyledLoginBox = styled.section`
         text-decoration: none;
         font-weight: bold;
         font-size: 0.8rem;
-      }
-    }
-
-    .inputBox {
-      position: relative;
-      width: 100%;
-
-      input {
-        width: 100%;
-        padding-top: 1.2em;
-        padding-left: 0.4em;
-        text-align: left;
-      }
-
-      span {
-        position: absolute;
-        left: 0.8em;
-        top: 0.6em;
-        font-size: .6rem;
-        color: #777575;
       }
     }
 
@@ -75,11 +51,8 @@ export const StyledLoginBox = styled.section`
       justify-content: center;
       gap: 1em;
 
-      
-        svg{
-            
-        }
-      
+      svg {
+      }
     }
   }
 `;

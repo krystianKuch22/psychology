@@ -2,19 +2,23 @@ import { StyledButton, StyledLink } from "./ButtonLink.styles";
 
 export default function ButtonLink({
   children,
+  className,
   href,
   asButton = true,
-  bgc,
+  backgroundColor,
   textColor,
+  name,
+  value,
+  onClick
 }) {
   if (asButton)
     return (
-      <StyledButton $bgc={bgc} $textColor={textColor}>
+      <StyledButton $backgroundColor={backgroundColor} $textColor={textColor} name={name} value={value} onClick={onClick}>
         {children}
       </StyledButton>
     );
   return (
-    <StyledLink href={href} $bgc={bgc} $textColor={textColor} passHref>
+    <StyledLink href={href} $backgroundColor={backgroundColor} $textColor={textColor} className={`a ${className}`} passHref>
       {children}
     </StyledLink>
   );

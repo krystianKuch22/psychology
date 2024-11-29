@@ -27,7 +27,7 @@ export const StyledDoctorCard = styled.div`
     gap: 0.5em;
 
     .opinions {
-      color: #aeaeae;
+      color: var(--opinions-text-color);
     }
   }
 
@@ -35,19 +35,19 @@ export const StyledDoctorCard = styled.div`
     display: flex;
     align-items: center;
     gap: 0.25em;
-    background-color: #bbffe7;
+    background-color: var(--distinguished-color);
     padding: 0.25em 0.5em;
     border-radius: 8px;
     svg {
       width: 1em;
-      color: #00744a !important;
+      color: var(--distinguished-star-color) !important;
       path {
-        fill: #00744a;
+        fill: var(--distinguished-star-color);
       }
     }
   }
 
   .categorySpecialist {
-    color: #454545;
+    color: var(--doctor-category-text-color);
   }
 `;
