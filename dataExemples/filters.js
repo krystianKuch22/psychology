@@ -36,6 +36,76 @@ export const filters = [
     filterName: "diseases",
     values: ["Depresja", "Borderline", "Omamy"],
   },
+  {
+    filterPlaceholder: "Język",
+    filterName: "language",
+    values: ["Polski", "Angielski", "Hiszpański"],
+  },
+  {
+    filterPlaceholder: "Najbliższy termin",
+    filterName: "nearestDate",
+    values: ["Dzisiaj", "Jutro", "Pojutrze"],
+  },
+  {
+    filterPlaceholder: "Stopień naukowy",
+    filterName: "degree",
+    values: ["Magister", "Doktor", "Profesor"],
+  },
+  {
+    filterPlaceholder: "Certyfikaty",
+    filterName: "certificates",
+    values: ["Magii", "Czarodziejstwa"],
+  },
+  {
+    filterPlaceholder: "Placówki/Specjalista",
+    filterName: "institution",
+    values: ["ScanMed", "LuxMed"],
+  },
+  {
+    filterPlaceholder: "Ubezpieczenie",
+    filterName: "insurance",
+    values: ["Podstawowe", "Deluxe"],
+  },
+  {
+    filterPlaceholder: "Umawianie prze portal",
+    filterName: "appointmentViaPortal",
+    values: ["Tak", "Nie"],
+  },
+  {
+    filterPlaceholder: "Metoda płatności",
+    filterName: "paymentMethod",
+    values: ["Przelew", "Blik", "Gotówka"],
+  },
+  {
+    filterPlaceholder: "Płeć",
+    filterName: "sex",
+    values: ["Mężczyzna", "Kobieta"],
+  },
+  {
+    filterPlaceholder: "Wiek",
+    filterName: "age",
+    values: ["20-30", "40-50"],
+  },
+  {
+    filterPlaceholder: "Ocena",
+    filterName: "rate",
+    values: [1, 2, 3, 4, 5],
+  },
+  {
+    filterPlaceholder: "Liczba opinii",
+    filterName: "numberOfRate",
+    values: ["10-20", "20-40", "Powyżej 40"],
+  },
+  {
+    filterPlaceholder: "Inny filtr",
+    filterName: "another",
+    values: ["10-20", "20-40", "Powyżej 40"],
+  },
+  {
+    filterPlaceholder: "Jeszcze inniejszy",
+    filterName: "more another",
+    values: ["10-20", "20-40", "Powyżej 40"],
+  },
 ];
 
 export const filtersBoolTab = {
@@ -55,6 +125,19 @@ export const filtersBool = [
     filterName: "onlineVisits",
     filterPlaceholder: "Wizyty online",
   },
+  {
+    filterName: "childrenAppointment",
+    filterPlaceholder: "Przyjmuje dzieci",
+  },
+  {
+    filterName: "disabilities",
+    filterPlaceholder: "Udogodnienia dla niepełnosprawnych",
+  },
+  {
+    filterName: "supervizor",
+    filterPlaceholder: "Superwizor",
+  },
+  
 ];
 
 export const namesOfFilters = [

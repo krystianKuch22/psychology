@@ -27,7 +27,10 @@ const GlobalStyles = createGlobalStyle`
   --decoline-plan-color: #c4c4c4;
   --plan-span-background-color: #D3D4FF;
   --plan-span-text-color: #3B3663;
-
+  --second-text-color: #454545;
+  --second-dark-color: #6c6c6c;
+  --background-available-hour: #F2F3FF;
+  --available-hour-text-color: #8C6DF9;
 }
 
  * {

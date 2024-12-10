@@ -30,14 +30,13 @@ export default function LoginBox({ language }) {
     e.preventDefault();
     try {
       const response = await axios.post(
-        `http://api.limbaapp.usermd.net/authentication/test@test.com/${loginFormData.password}`
+        `/api/authentication/test@test.com/${loginFormData.password}`
       );
       console.log(response);
     } catch (error) {
       console.error("Error fetching data:", error);
     }
   }
-
   return (
     <StyledLoginBox>
       <div className="loginBox">

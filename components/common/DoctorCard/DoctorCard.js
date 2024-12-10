@@ -3,7 +3,7 @@ import Star from "../Icons/Star/Star";
 import { StyledDoctorCard } from "./DoctorCard.styles";
 import StarRating from "./StarRating/StarRating";
 
-export default function DoctorCard({language, doctor }) {
+export default function DoctorCard({ language, doctor }) {
   let sum = 0;
   doctor.opinions.forEach((opinion) => {
     sum += opinion.opinionRating;
@@ -15,7 +15,7 @@ export default function DoctorCard({language, doctor }) {
     <StyledDoctorCard>
       <div className="photoBox">
         <Image
-          src="/jpg/doctorPhoto.jpg"
+          src={doctor.photo}
           alt="Doctor photo"
           fill
           style={{ objectFit: "cover" }}
@@ -26,7 +26,9 @@ export default function DoctorCard({language, doctor }) {
         <div className="ratingBox">
           <StarRating rating={rating} />
           <span>{rating}</span>
-          <span className="opinions">({doctor.opinions.length} {language.opinions})</span>
+          <span className="opinions">
+            ({doctor.opinions.length} {language.opinions})
+          </span>
           <span className="distinguished">
             {doctor.isDistinguished ? (
               <>

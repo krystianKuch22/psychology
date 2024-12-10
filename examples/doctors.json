@@ -2,6 +2,7 @@
   {
     "firstName": "Anna",
     "lastName": "Maksymilinowicz - Kowalska",
+    "photo": "/jpg/doctorPhoto.jpg",
     "opinions": [
       {
         "user": "Alina",
@@ -16,6 +17,10 @@
     ],
     "isDistinguished": true,
     "specialization": "doktor psychologii, terapeuta",
+    "diseases": ["depresja"],
+    "degree": "magister",
+    "language": "polski",
+    "paymentMethod": ["gotówka", "karta"],
     "description": "Zapraszam na bezpłatną konsultację wstępną którą prowadzę przez telefon lub online (przez WhatsApp) na którą składa się: - pomogę określić wstępnie problemy, trudności z którymi Pan(i) się mierzy - postaram się doradzić jaki rodzaj psychoterapii by Panu(i) pasował - spotkania indywidualne, par lub grupowe, poradnictwo rodzicielskie - spróbuję nakreślić jaki nurt psychoterapii pasowałby danej osobie - zaproponuję specjalistę: psychoterapeutę, psychologa, psychoterapeutę par, seksuologa, psychiatrę, coacha lub neurologa - zaproponuję kilka miejsc w Warszawie lub online gdzie można komfortowo skorzystać z psychoterapii - postaram się ogólnie pomóc i pokierować tak, aby pierwsze kroki w szukaniu dla siebie specjalisty były łatwiejsze",
     "tags": [
       "Depresja",
@@ -29,6 +34,7 @@
   {
     "firstName": "Józef",
     "lastName": "Karaś",
+    "photo": "/jpg/doctorPhoto2.jpg",
     "opinions": [
       {
         "user": "Alina",
@@ -38,6 +44,10 @@
     ],
     "isDistinguished": true,
     "specialization": "doktor psychologii, terapeuta",
+    "diseases": ["omamy"],
+    "degree": "doktor",
+    "language": "angielski",
+    "paymentMethod": ["gotówka"],
     "description": "Zapraszam na bezpłatną konsultację wstępną którą prowadzę przez telefon lub online (przez WhatsApp) na którą składa się: - pomogę określić wstępnie problemy, trudności z którymi Pan(i) się mierzy - postaram się doradzić jaki rodzaj psychoterapii by Panu(i) pasował - spotkania indywidualne, par lub grupowe, poradnictwo rodzicielskie - spróbuję nakreślić jaki nurt psychoterapii pasowałby danej osobie - zaproponuję specjalistę: psychoterapeutę, psychologa, psychoterapeutę par, seksuologa, psychiatrę, coacha lub neurologa - zaproponuję kilka miejsc w Warszawie lub online gdzie można komfortowo skorzystać z psychoterapii - postaram się ogólnie pomóc i pokierować tak, aby pierwsze kroki w szukaniu dla siebie specjalisty były łatwiejsze",
     "tags": [
       "Depresja",
@@ -47,9 +57,11 @@
       "Mania",
       "Fobie"
     ]
-  },{
-    "firstName": "Joanna",
-    "lastName": "Krupińska",
+  },
+  {
+    "firstName": "Jacek",
+    "lastName": "Krupiński",
+    "photo": "/jpg/doctorPhoto3.jpg",
     "opinions": [
       {
         "user": "Alina",
@@ -58,7 +70,11 @@
       }
     ],
     "isDistinguished": true,
-    "specialization": "doktor psychologii, terapeuta",
+    "specialization": "psychiatra, terapeuta",
+    "diseases": ["depresja", "omamy"],
+    "degree": "magister",
+    "language": "polski",
+    "paymentMethod": ["karta"],
     "description": "Zapraszam na bezpłatną konsultację wstępną którą prowadzę przez telefon lub online (przez WhatsApp) na którą składa się: - pomogę określić wstępnie problemy, trudności z którymi Pan(i) się mierzy - postaram się doradzić jaki rodzaj psychoterapii by Panu(i) pasował - spotkania indywidualne, par lub grupowe, poradnictwo rodzicielskie - spróbuję nakreślić jaki nurt psychoterapii pasowałby danej osobie - zaproponuję specjalistę: psychoterapeutę, psychologa, psychoterapeutę par, seksuologa, psychiatrę, coacha lub neurologa - zaproponuję kilka miejsc w Warszawie lub online gdzie można komfortowo skorzystać z psychoterapii - postaram się ogólnie pomóc i pokierować tak, aby pierwsze kroki w szukaniu dla siebie specjalisty były łatwiejsze",
     "tags": [
       "Depresja",
