@@ -1,12 +1,13 @@
-// import "@/styles/globals.css";
-
+import { LanguageProvider } from "@/context/LanguageContext";
 import GlobalStyles from "@/styles/GlobalStyles";
 
 export default function App({ Component, pageProps }) {
   return (
     <>
-      <GlobalStyles />
-      <Component {...pageProps} />
+      <LanguageProvider>
+        <GlobalStyles />
+        <Component {...pageProps} />
+      </LanguageProvider>
     </>
   );
 }
