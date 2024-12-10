@@ -54,7 +54,7 @@ export default function ResultSection({ language, filters, doctors }) {
           <div className="doctorsBox">
             {filteredDoctors.map((doctor) => {
               return (
-                <div className="doctorBox">
+                <div className="doctorBox" key={doctor.lastName}>
                   <div className="doctorInfo">
                     <DoctorCard language={language} doctor={doctor} />
                     <p>{doctor.description}</p>
